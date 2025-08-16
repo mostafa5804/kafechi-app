@@ -1,0 +1,7 @@
+{
+  "name": "کافه چی هوشمند",
+  "description": "An intelligent barista app that guides users from drink selection to detailed, AI-enhanced recipes.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
