@@ -1,6 +1,4 @@
-<div align="center">
-  <img alt="Banner کافه چی هوشمند" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+
 
 <div align="center">
   <h1>کافه چی هوشمند</h1>
