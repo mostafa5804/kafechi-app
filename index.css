@@ -1,3 +1,4 @@
+
 /* General Setup */
 :root {
     --bg-color: #FBF9F6; /* Creamy off-white */
@@ -298,6 +299,16 @@ html, body {
     line-height: 1.6;
 }
 
+.ai-settings-card a {
+    color: var(--accent-primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+.ai-settings-card a:hover {
+    text-decoration: underline;
+}
+
+
 .ai-settings-form {
     display: flex;
     gap: 0.75rem;
@@ -497,29 +508,60 @@ html, body {
 }
 
 .recipe-section {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.recipe-section:last-child {
+    margin-bottom: 0;
 }
 
 .recipe-section h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--border-color);
 }
 
-.recipe-section ul {
-    list-style-type: '☕️ ';
-    padding-right: 1.5rem;
+.servings-info {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    margin-bottom: 1rem;
+    font-style: italic;
 }
 
-.recipe-section li {
-    margin-bottom: 0.75rem;
-    padding-right: 0.5rem;
+.ingredients-list, .tips-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients-list li, .tips-list li {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.8;
+    padding: 0.5rem 1.5rem 0.5rem 0;
+    position: relative;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.ingredients-list li:last-child, .tips-list li:last-child {
+    border-bottom: none;
+}
+
+.ingredients-list li::before, .tips-list li::before {
+    content: '☕️';
+    position: absolute;
+    right: 0;
+    top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.tips-list li::before {
+    content: '💡';
 }
 
 .instructions-list {
+    list-style-type: none;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
